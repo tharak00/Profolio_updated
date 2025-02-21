@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+</head>
+<body>
+  <div id="header">
+<div class="container"> 
+    <nav>
+      <img  src="Screenshot 2025-01-26 234819.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>AI/ML Engineer</p>
+      <h1>Hi,I'm <span>Tharakananda</span><br>From India</h1>
+    </div>
+  </div>
+</div>
+<div id="about">
+  <div class="continer">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="pic2.png" class="side-pic">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Kavali Tharakananda is a skilled programmer specializing in Python, machine learning, and web development. With expertise in libraries like NumPy, Pandas, and Scikit-learn, he tackles complex data science problems. Pursuing a B.Tech in AI and Data Science at Annamacharya Institute of Technology, he has worked on projects such as a breast cancer prediction model and an interactive to-do list app.
+          A proactive learner, he holds certifications in advanced data science and has notable achievements in competitive coding. Tharakananda is always eager to expand his knowledge and apply his skills to real-world challenges in AI and data science</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"  onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>AI/ML</span><br>Making AI/ML Projects</li>
+                <li><span>Web Development</span><br>Designing the web/app interface</li>
+                  <li><span>Data Science</span><br>Manipulations with Data</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2025(jan)-2025(April)</span><br>I am a virtual intern at Blackbucks Education Pvt Ltd, participating in the APSAC-APSCHE long-term internship program, focusing on AI/ML</li>
+                  <li><span>2023(Apr)-2023(Oct)</span><br>Iam a Virtual intern at Indo-Euro Synchronization (IES) Pvt Ltd,participating in the APSHE long-term internship program,focusing on DataScience</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021-2025(current)</span><br>B.Tech,Artificial Intelligence and Data Science,AITS-Rajampet</li>
+                <li><span>2019-2021</span><br>Intermediate(MPC),Sri chaitanya Jr-college,Tirupathi</li>
+                  <li><span>2018-2019</span><br>SSC,Sri Vivekananda Engilsh Medium School,Gorantla</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------services--------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-brain"></i>
+      <h2>AI/ML Engineer</h2>
+      <p>Developing AI/ML models to solve real-world problems, enhance automation, and improve decision-making processes.</p>
+      <a href="#">Read More</a>
+      </div>
+      <div>
+        <i class="fas fa-laptop-code"></i>
+        <h2>Web Development</h2>
+        <p>Creating user-friendly and visually appealing web/app interfaces to enhance user experience and engagement.</p>
+        <a href="#">Read More</a>
+        </div>
+        <div>
+          <i class="fas fa-chart-line"></i>
+          <h2>Data Science</h2>
+          <p>Analyzing and interpreting complex data to provide actionable insights and drive decision-making processes.</p>
+          <a href="#">Read More</a>
+          </div>
+    </div>
+  </div>
+</div>
+<!-----------Portfolio-------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="DALL·E 2025-02-20 13.02.59 - A data scientist analyzing a prescription text extraction system on a modern laptop. The screen displays an interface with text saying 'Prescription T.webp" alt="">
+        <div class="layer">
+          <h3>Prescription Text  Analyzer </h3>
+          <p>Prescription Analyzer uses Streamlit and Gemini 1.5 Flash to extract, analyze, and provide medicine details from images.</p>
+        <a href="https://vandana-prescription-model.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+      </div>
+      <div class="work">
+        <img src="a0a73fa8-0c52-4195-9307-8ab1ffefd7a2.webp" alt="">
+        <div class="layer">
+          <h3> Breast cancer prediction</h3>
+          <p>Breast cancer prediction model uses Logistic Regression, EDA, and feature importance to classify tumor malignancy.</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="DALL·E 2025-02-20 11.15.48 - A data scientist analyzing an email spam detection dataset using a computer. The screen displays text processing steps, feature extraction using TF-ID.webp" alt="">
+      <div class="layer">
+        <h3>Email Spam Detection</h3>
+        <p>words
+          ChatGPT said:
+          Email spam detection model uses NLP, TF-IDF, and Naïve Bayes to classify emails as spam/ham.</p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+      </div>
+      <div class="work">
+        <img src="my.jpg" alt="">
+        <div class="layer">
+          <h3>Shoe Slider</h3>
+          <p>Responsive Nike shoe carousel with autoplay, navigation, product details, built using HTML, CSS, and JavaScript.</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+  </div>
+</div>
+<!--------------------------------------Contact--------------------------------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-envelope-square"></i> tharaknanda7@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +91 9032642044</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text"  name ="Name"placeholder="Your Name">
+          <input type="email"  name="Email" placeholder="Your Email">
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Send</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> Copyrights © 2024 Kavali Tharakananda<i class="fas fa-heart"></i> . All rights reserved. Designed & developed by Kavali Tharakananda.</p>
+  </div>
+</div>
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgk4W0Vc5bfYB7C3mHjhhPzS7bHx2C5sDZDrCHBimiOVnUAt0wqK3mcKXle-HgN0_zbg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+          msg.innerHTML="Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML=""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
